@@ -30,9 +30,22 @@
   <rect width="1200" height="400" fill="url(#bgGrad)" />
   <rect width="1200" height="400" fill="url(#grid)" />
 
+  <rect x="-240" y="0" width="180" height="400" fill="#ffffff" opacity="0.035" transform="skewX(-18)">
+    <animate attributeName="x" from="-240" to="1260" dur="9s" repeatCount="indefinite" />
+  </rect>
+  <path d="M0 320 C220 280 350 350 560 310 S930 250 1200 300" stroke="#60a5fa" stroke-width="2" opacity="0.25" fill="none" stroke-dasharray="8 14">
+    <animate attributeName="stroke-dashoffset" from="0" to="-220" dur="7s" repeatCount="indefinite" />
+  </path>
+
   <!-- Decorative Glow Orbs -->
-  <circle cx="150" cy="80" r="120" fill="#3b82f6" opacity="0.15" filter="url(#glow)"/>
-  <circle cx="1050" cy="320" r="140" fill="#8b5cf6" opacity="0.15" filter="url(#glow)"/>
+  <circle cx="150" cy="80" r="120" fill="#3b82f6" opacity="0.15" filter="url(#glow)">
+    <animate attributeName="r" values="120;145;120" dur="5s" repeatCount="indefinite" />
+    <animate attributeName="opacity" values="0.15;0.24;0.15" dur="5s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="1050" cy="320" r="140" fill="#8b5cf6" opacity="0.15" filter="url(#glow)">
+    <animate attributeName="r" values="140;115;140" dur="6s" repeatCount="indefinite" />
+    <animate attributeName="opacity" values="0.15;0.23;0.15" dur="6s" repeatCount="indefinite" />
+  </circle>
 
   <!-- Abstract Code Brackets Background Elements -->
   <text x="60" y="240" fill="#30363d" font-family="monospace" font-size="220" font-weight="bold" opacity="0.3">&lt;</text>
